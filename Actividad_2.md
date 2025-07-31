@@ -1,4 +1,4 @@
-## Simbolos usados en Diagramas de Flujo
+# Simbolos usados en Diagramas de Flujo
 
 1) **Ovalado**: Representa el inicio o el fin de un algoritmo
 2) **Rectangulo**: Indica una tarea o proceso especifico dentro del proceso
@@ -12,3 +12,18 @@
 [Link a la pagina usada](https://clickup.com/es-ES/blog/214499/simbolos-del-diagrama-de-flujo)
 
 ![Imagen descriptiva](/images/diagrama-de-flujo.png)
+
+# Ejercicio 2
+
+Construye un algoritmo que, al recibir como datos el ID del empleado y los seis primeros sueldos del año, calcule el ingreso total semestral y el promedio mensual, e imprima el ID del empleado, el ingreso total y el promedio mensual.
+
+## Solución
+
+```
+Inicio
+Leer ID, S1, S2, S3, S4, S5, S6
+Total = S1 + S2 + S3 + S4 + S5 + S6
+Promedio = Total / 6
+Escribir ID, Total, Promedio
+Fin
+```
