@@ -33,3 +33,14 @@ Fin
 ### Diagrama de Flujo
 
 ![Ejercicio2](/images/Ejercicio2.png)
+
+# Ejercicio 3
+
+Un curso se evalua con 7 notas, conoce 6 notas, las cuales valen el 70% del curso. Se le pide al usuario las primeras 6 notas, y se calcula cuanto debe sacar en la evaluación final para aprobar, minimo, con 3.0.
+
+## Solución
+
+### Analisis
+
+Variables de entrada: N1, N2, N3, N4, N5, N6
+Proceso: 
