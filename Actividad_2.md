@@ -19,6 +19,8 @@ Construye un algoritmo que, al recibir como datos el ID del empleado y los seis 
 
 ## Solución
 
+### Pseudocodigo
+
 ```
 Inicio
 Leer ID, S1, S2, S3, S4, S5, S6
@@ -27,3 +29,7 @@ Promedio = Total / 6
 Escribir ID, Total, Promedio
 Fin
 ```
+
+### Diagrama de Flujo
+
+![Ejercicio2](/images/Ejercicio2.png)
