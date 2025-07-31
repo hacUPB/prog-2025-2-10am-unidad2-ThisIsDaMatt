@@ -10,3 +10,5 @@
 8) **Simbolo de entrada manual**: Resalta las interacciones del usuario que requieren introduccion de datos
 
 [Link a la pagina usada](https://clickup.com/es-ES/blog/214499/simbolos-del-diagrama-de-flujo)
+
+![Imagen descriptiva](/images/diagrama-de-flujo.png)
