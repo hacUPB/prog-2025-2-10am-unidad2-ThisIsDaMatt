@@ -52,7 +52,7 @@ Variables de Salida: Promedio de N1 a N6 y Nota Final
 Inicio
 Leer N1, N2, N3, N4, N5, N6
 Promedio = (S1 + S2 + S3 + S4 + S5 + S6) / 6
-Nota final = 3.0 - (Promedio x 0.7) / 0.3
+Nota final = 3.0 - (Promedio * 0.7) / 0.3
 Si Promedio > 3.0, Aprobar
 Sino, Reprobar
 Escribir Promedio, Nota Final, Aprueba o no Aprueba
@@ -89,7 +89,7 @@ Si Cantidad_Lapices >= 1000
 Si no
     Valor_Unidad = 90
 Fin si
-Costo = Cantidad_Lapices x Valor_Unidad
+Costo = Cantidad_Lapices * Valor_Unidad
 Escribir "El valor total es:", Costo
 Fin
 ```
@@ -110,7 +110,7 @@ Variables de entrada: Valor de compra
 
 Proceso: Aplicar descuento segun aplica
 
-Variable de salida: Valor con descuento
+Variable de salida: Descuento, Valor Final
 
 ### Pseudocodigo
 
@@ -118,9 +118,12 @@ Variable de salida: Valor con descuento
 Inicio
 Leer Valor_Compra
 Si Valor_Compra > 250000
-Valor_final = Valor_Compra x 0.85
-Sino, Valor_Final = Valor_Compra x 0.92
-Escribir Valor_Final
+    Descuento = Valor_Compra * 0.15
+Si no
+    Descuento = Valor_Compra * 0.08
+Fin si
+Valor_Total = Valor_Compra - Descuento
+Escribir "Valor a pagar:", Valor_Total
 Fin
 ```
 
@@ -136,28 +139,30 @@ El director de una escuela esta organizndo un viaje de estudios, y requiere dete
 
 ### Analisis
 
-Variables de entrada: Cantidad de Alumnos
+Variables de entrada: Alumnos
 
 Proceso: Aplicar el costo de cada alumno segun la cantidad
 
-Variable de salida: Costo de renta
+Variable de salida: Costo de Alumno, Costo Total
 
 ### Pseudocodigo
 
 ```
 Inicio
-Leer Cantidad_Alumnos
-Si Cantidad_Alumnos >= 100
-Costo_Renta = Cantidad_Alumnos x 65
-O, Si Cantidad_Alumnos 50-99
-Costo_Renta = Cantidad_Alumnos x 70
-O, Si Cantidad_Alumnos 30-49
-Costo_Renta = Cantidad_Alumnos x 95
-Sino, Costo_Renta = 4000
-Escribir Costo_Renta
-Fin
+Leer Alumnos
+Si Alumnos >= 100
+    Costo_Alumno = 65
+Si no 
+    Si Alumnos >= 50
+        Costo_Alumno = 70
+    Si no
+        Costo_Alumno = 90
+    Fin si
+Fin si 
+
 ```
 
 ### Diagrama de flujo
 
 ![Ejercicio6](/images/Ejercicio6.png)
+
