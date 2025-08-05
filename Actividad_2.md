@@ -72,7 +72,11 @@ Realice un algoritmo para determinar cuanto se debe pagar por equis cantidad de 
 ### Analisis
 
 Variables de entrada: Cantidad de Lapices
+
+Variable intermedia: Valor unidad
+
 Proceso: Contar cantidad y aplicar precio
+
 Variables de Salida: Cantidad de Lapices, Precio
 
 ### Pseudocodigo
@@ -81,9 +85,12 @@ Variables de Salida: Cantidad de Lapices, Precio
 Inicio
 Leer Cantidad_Lapices
 Si Cantidad_Lapices >= 1000
-Costo = 85 x Cantidad_Lapices
-Sino, Costo = 90 x Cantidad_Lapices
-Escribir Cantidad_Lapices, Costo
+    Valor_Unidad = 85
+Si no
+    Valor_Unidad = 90
+Fin si
+Costo = Cantidad_Lapices x Valor_Unidad
+Escribir "El valor total es:", Costo
 Fin
 ```
 
@@ -100,7 +107,9 @@ Un almacen de compra tiene una promocion: por compras superiores a $250000 se le
 ### Analisis
 
 Variables de entrada: Valor de compra
+
 Proceso: Aplicar descuento segun aplica
+
 Variable de salida: Valor con descuento
 
 ### Pseudocodigo
@@ -128,7 +137,9 @@ El director de una escuela esta organizndo un viaje de estudios, y requiere dete
 ### Analisis
 
 Variables de entrada: Cantidad de Alumnos
+
 Proceso: Aplicar el costo de cada alumno segun la cantidad
+
 Variable de salida: Costo de renta
 
 ### Pseudocodigo
