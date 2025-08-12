@@ -193,5 +193,90 @@ Fin Si
 Fin
 ```
 
+# Bucles y ciclos
 
+Un **bucle** en programación es una estructura de control que permite **ejecutar repetidamente** un bloque de código mientras se cumple una condición específica o durante un número determinado de iteraciones. Son fundamentales para **automatizar** tareas repetitivas, realizar cálculos iterativos y procesar grandes conjuntos de datos.
 
+En **Python** existe **for** y **while**, mientras que en otros lenguajes, como **C++** puede existir tambien un **do-while**.
+
+# Ejercicio 1
+
+Se requiere un algoritmo para determinar, de N cantidades, cuantas son cero, cuantas son menores a cero y cuantas son mayores a cero.
+Realice el diagrama de flujo y el pseudocodigo, representarlo, usando el flujo apropiado.
+
+## Solución
+
+### Analisis
+
+Variable de entrada: N, Cantidad
+
+Variables de salida: Ceros, Mayores, Menores (contador)
+
+Control: N
+
+### Pseudocodigo
+
+```
+Inicio
+Leer N
+Ceros = 0
+Mayores = 0
+Menores = 0
+Mientras N > 0:
+    Leer Cantidad
+    Si Cantidad > 0:
+        Mayores = Mayores + 1
+    Si no
+        Si Cantidad = 0:
+            Ceros = Ceros + 1
+        Si no
+            Menores = Menores + 1
+        Fin Si
+    Fin Si
+    N = N - 1
+Fin Mientras
+Mostrar Ceros, Mayores, Menores
+Fin
+```
+### Diagrama de Flujo
+
+![EjercicioBucle1](/images/EjercicioBucle1.png)
+
+# Ejercicio 2
+
+Calcular el factorial de un numero entero ingresado por el usuario.
+
+## Solución (propia)
+
+### Analisis
+
+Variables de entrada: N
+
+Variables de salida: Resultado
+
+Variables de control: i, Factorial
+
+### Pseudocodigo
+
+```
+Inicio
+Leer N
+Si N <= 0
+    Escribir "No definido"
+Fin si
+Factorial = 1
+i = 1
+Mientras i <= N
+    Factorial = Factorial * i
+    i = i + 1
+Fin Mientras
+Mostrar Resultado
+Fin
+```
+## Solución (profesor)
+
+Variables de entrada: N
+
+Variables de salida: Factorial
+
+Variables de control: i / N
