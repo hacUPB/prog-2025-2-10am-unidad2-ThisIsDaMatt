@@ -280,3 +280,32 @@ Variables de entrada: N
 Variables de salida: Factorial
 
 Variables de control: i / N
+
+# Tarea
+
+Consultar como funcionan las tarjetas de credito. Asumir una tasa de interes fija (2%). Preguntar al usuario el valor de la compra y el numero de cuotas. Calcular y mostrar en pantalla el valor de cada una de las cuotas que debe pagar hasta saldar la deuda.
+
+## Solucion
+
+### Analisis
+
+Variables de entrada: ValorCompra, NumeroCuotas, Tasa
+
+Variables de salida: CuotaMensual
+
+Variables de control: i
+
+### Pseudocodigo
+
+```
+Inicio
+Tasa = 0.02
+Leer ValorCompra
+Leer NumeroCuotas
+CuotaMensual = (ValorCompra * Tasa) / (1 - ( (1 + Tasa) ^ (-NumeroCuotas) ) )
+Mostrar CuotaMensual
+Para 1 desde i hasta CuotaMensual
+    Mostrar "Cuota", i, ": ", CuotaMensual
+Fin Para
+Fin
+
