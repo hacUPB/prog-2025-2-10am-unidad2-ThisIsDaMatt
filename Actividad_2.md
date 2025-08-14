@@ -302,10 +302,14 @@ Inicio
 Tasa = 0.02
 Leer ValorCompra
 Leer NumeroCuotas
-CuotaMensual = (ValorCompra * Tasa) / (1 - ( (1 + Tasa) ^ (-NumeroCuotas) ) )
-Mostrar CuotaMensual
-Para 1 desde i hasta CuotaMensual
-    Mostrar "Cuota", i, ": ", CuotaMensual
+InteresTotal = ValorCompra * Tasa * NumeroCuotas
+MontoTotal = ValorCompra + InteresTotal
+CuotaMensual = MontoTotal / NumeroCuotas
+Para i desde 1 hasta NumeroCuotas
+    Mostrar "Cuota", i, ": $", CuotaMensual
 Fin Para
+Mostrar "Valor inicial: $", ValorCompra
+Mostrar "Interés total: $", InteresTotal
+Mostrar "Total a pagar: $", MontoTotal
 Fin
-
+```
